@@ -1,68 +1,81 @@
-# 🌟 Welcome to the Medallion Data Warehouse Project!
+# 🚀 Data Warehouse and Analytics Project
 
-Welcome! This repository demonstrates an end-to-end implementation of a modern **Data Warehouse & ETL Pipeline** using the **Medallion Architecture** (Bronze ➔ Silver ➔ Gold).
-
-The goal of this project is to showcase how unstructured and raw business data can be systematically ingested, cleaned, standardized, and transformed into high-value analytical models ready for Business Intelligence (BI) and decision-making.
-
----
-
-## 🏗️ Architecture & Technical Overview
-
-The project is structured around the 3-layer Medallion pattern to enforce data quality and segregation at every stage:
-
-* **🥉 Bronze Layer (Raw Landing Zone):** Ingests raw data from multiple sources (CSV, JSON, SQL) as a landing zone without altering original formats.
-* **🥈 Silver Layer (Cleaned Data):** Handles data cleaning, missing values (Nulls), deduplication, schema validation, and type standardization.
-* **🥇 Gold Layer (Aggregated Data):** Structures business-ready data into aggregated data models and Star Schemas optimized for analytical tools.
+Welcome to the Data Warehouse and Analytics Project repository! 
+This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 ---
 
-## 💡 Key Technical Highlights
+## 🏗️ Data Architecture
 
-* **Scalable Data Pipeline:** Built with clean, modular Python and SQL scripts for seamless execution.
-* **Data Quality & Integrity:** Automated checks during the Silver phase to ensure accurate data transformation.
-* **Data Warehousing Best Practices:** Clean separation of concerns between storage, processing, and analytical layers.
-* **BI Readiness:** Direct integration compatibility with tools like Power BI, Tableau, and Streamlit.
+**Project Schema Diagram:**
+![Data Warehouse Architecture Diagram](images/warehouse-design.jpg)
 
----
+The data architecture for this project follows the **Medallion Architecture** (Bronze, Silver, and Gold layers): 
 
-## 🛠️ Tech Stack & Tools
-
-* **Language:** Python 3.x
-* **Data Processing & Manipulation:** Pandas / SQL
-* **Architecture:** Medallion Lakehouse / Data Warehouse Pattern
-* **Data Storage Formats:** CSV, Parquet, Relational Databases
-* **Visualization (Optional):** Power BI / Streamlit
+* **🥉 Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into the SQL Server Database.
+* **🥈 Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+* **🥇 Gold Layer:** Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
 
-## 🚀 Quick Start & Setup
+## 📖 Project Overview
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/ahmedsdiiq0-dev/Medallion-data-warehouse.git](https://github.com/ahmedsdiiq0-dev/Medallion-data-warehouse.git)
-   cd Medallion-data-warehouse
-   ```
+This project involves:
+* **Data Architecture:** Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+* **ETL Pipelines:** Extracting, transforming, and loading data from source systems into the warehouse.
+* **Data Modeling:** Developing fact and dimension tables optimized for analytical queries.
+* **Analytics & Reporting:** Creating SQL-based reports and dashboards for actionable insights.
 
-2. **Set up virtual environment & install dependencies:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+**🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:**
+* SQL Development
+* Data Architecture
+* Data Engineering
+* ETL Pipeline Development
+* Data Modeling
+* Data Analytics
 
-3. **Run the pipeline:**
-   ```bash
-   python main.py
-   ```
+---
+
+## 🛠️ Important Links & Tools (Everything is Free!)
+
+* **Datasets:** Access to the project dataset (CSV files).
+* **Database Engine:** SQL Server (Hosted locally via **Docker** on macOS).
+* **Database GUI:** **Azure Data Studio / DBeaver** for managing and interacting with databases seamlessly on Mac.
+* **Git Repository:** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+* **DrawIO:** Design data architecture, models, flows, and diagrams.
+* **Notion:** Get the Project Template from Notion.
+* **Notion Project Steps:** Access to All Project Phases and Tasks.
+
+---
+
+## 🚀 Project Requirements
+
+### 1. Building the Data Warehouse (Data Engineering)
+**Objective:** Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+
+**Specifications:**
+* **Data Sources:** Import data from two source systems (ERP and CRM) provided as CSV files.
+* **Data Quality:** Cleanse and resolve data quality issues prior to analysis.
+* **Integration:** Combine both sources into a single, user-friendly data model designed for analytical queries.
+* **Scope:** Focus on the latest dataset only; historization of data is not required.
+* **Documentation:** Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+
+### 2. BI: Analytics & Reporting (Data Analysis)
+**Objective:** Develop SQL-based analytics to deliver detailed insights into:
+* Customer Behavior
+* Product Performance
+* Sales Trends
+
+These insights empower stakeholders with key business metrics, enabling strategic decision-making. *(For more details, refer to `docs/requirements.md`)*.
 
 ---
 
 ## 👤 About Me
 
-Hi there! 👋 I'm **Ahmed Abdel Moneim**, a Computer Science student passionate about **Data Engineering**, **Data Analysis**, and building scalable ETL pipelines.
+Hi there! 👋 I'm **Ahmed Abdel Moneim**, a Computer Science student passionate about **Data Engineering**, **Data Analysis**, and building scalable data solutions.
 
 * 🐙 **GitHub:** [https://github.com/ahmedsdiiq0-dev](https://github.com/ahmedsdiiq0-dev)
-* 🛠️ **Core Skills:** Python, SQL, Pandas, Power BI, Data Warehousing, ETL Pipelines, Data Modeling
+* 🛠️ **Core Skills:** SQL, Relational Databases, Data Warehousing, Data Modeling (Star Schema), Power BI, ETL/ELT Pipelines.
 
 ---
 *If you find this project useful or interesting, feel free to give it a ⭐ on GitHub!*
