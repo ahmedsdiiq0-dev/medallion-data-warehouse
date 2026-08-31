@@ -40,10 +40,9 @@ This project involves:
 
 * **Datasets:** Access to the project dataset (CSV files).
 * **Database Engine:** SQL Server (Hosted locally via **Docker** on macOS).
-* **Database GUI:** **Azure Data Studio / DBeaver** for managing and interacting with databases seamlessly on Mac.
+* **Database GUI:** **Vs code with mssql / DBeaver** for managing and interacting with databases seamlessly on Mac.
 * **Git Repository:** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 * **DrawIO:** Design data architecture, models, flows, and diagrams.
-* **Notion:** Get the Project Template from Notion.
 * **Notion Project Steps:** Access to All Project Phases and Tasks.
 
 ---
